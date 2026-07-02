@@ -1,0 +1,25 @@
+app:
+  name: SentinelX
+  version: "0.1.0"
+  env: development
+
+database:
+  name: sentinelx
+  collections:
+    iocs: iocs
+    alerts: alerts
+    cases: cases
+    feeds: feeds
+
+logging:
+  level: DEBUG
+  file: logs/sentinelx.log
+  rotation: "10 MB"
+  retention: "30 days"
+
+collectors:
+  schedule_interval_minutes: 60
+  timeout_seconds: 30
+
+enrichment:
+  cache_ttl_hours: 24
