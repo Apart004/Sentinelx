@@ -4,6 +4,8 @@ A day-by-day record of building SentinelX. One line per session — newest entry
 
 ---
 
+2026-07-05 — set up structured logging with loguru (console + file output, rotation, retention)
+
 2026-07-02 — built config system (config.yaml + .env + loader.py), added pyyaml dependency
 
 2026-06-27 — added base dependencies (pydantic, python-dotenv, loguru), fixed pyproject.toml package discovery
