@@ -4,6 +4,8 @@ A day-by-day record of building SentinelX. One line per session — newest entry
 
 ---
 
+2026-07-09 — added Docker setup (Dockerfile, docker-compose.yml with MongoDB + app container)
+
 2026-07-05 — set up structured logging with loguru (console + file output, rotation, retention)
 
 2026-07-02 — built config system (config.yaml + .env + loader.py), added pyyaml dependency
