@@ -4,7 +4,9 @@ Sets up loguru with console + file output, log rotation, and consistent formatti
 """
 
 import sys
+
 from loguru import logger
+
 from config.loader import settings
 
 
