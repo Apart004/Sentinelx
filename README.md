@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![Status](https://img.shields.io/badge/status-active%20development-orange.svg)
+![CI](https://github.com/Apart004/Sentinelx/actions/workflows/ci.yml/badge.svg)
 
 SentinelX is an open-source platform for blue team analysts and security engineers. It automatically collects threat intelligence from multiple feeds, detects attacks using Sigma and YARA rules, enriches indicators of compromise, and automates incident response — all self-hosted, all offline-capable.
 
