@@ -3,6 +3,8 @@
 A day-by-day record of building SentinelX. One line per session — newest entry on top.
 
 ---
+2026-07-13 — wrote ADR-001 (Python stack decision record), completing Phase 0
+
 2026-07-12 — wrote architecture.md with full system diagram, component breakdown, data flow
 
 2026-07-11 — set up GitHub Actions CI (black, ruff, isort); first green build in 14s
