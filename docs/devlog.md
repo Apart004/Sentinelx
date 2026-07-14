@@ -3,6 +3,8 @@
 A day-by-day record of building SentinelX. One line per session — newest entry on top.
 
 ---
+2026-07-14 — designed IOC data schema (database/models.py) with pydantic, started Phase 1 on branch phase-1-threat-intel
+
 2026-07-13 — wrote ADR-001 (Python stack decision record), completing Phase 0
 
 2026-07-12 — wrote architecture.md with full system diagram, component breakdown, data flow
