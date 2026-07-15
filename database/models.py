@@ -40,12 +40,11 @@ class IOC(BaseModel):
     Every collector normalizes its output into this schema before storage.
     """
 
-    
-
     # --- Identity ---
     value: str = Field(..., description="The raw IOC value (IP, domain, hash, etc.)")
-    ioc_type: str = Field(..., description="Type of indicator (ip, domain, url, md5, sha1, sha256, email)")
-
+    ioc_type: str = Field(
+        ..., description="Type of indicator (ip, domain, url, md5, sha1, sha256, email)"
+    )
 
     # --- Source tracking ---
     source: str = Field(..., description="Feed that first reported this IOC")
