@@ -1,9 +1,5 @@
 # SentinelX Development Log
 
-A day-by-day record of building SentinelX. One line per session — newest entry on top.
-
----
-
 2026-07-15 — fixed IOC model enum serialization, schema now produces clean string output
 
 2026-07-14 — designed IOC data schema (database/models.py) with pydantic, started Phase 1 on branch phase-1-threat-intel
