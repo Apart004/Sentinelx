@@ -1,5 +1,8 @@
 # SentinelX Development Log
 
+
+2026-07-18 — added MongoDB client with connection pooling (database/client.py)
+
 2026-07-15 — fixed IOC model enum serialization, schema now produces clean string output
 
 2026-07-14 — designed IOC data schema (database/models.py) with pydantic, started Phase 1 on branch phase-1-threat-intel
