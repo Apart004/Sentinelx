@@ -1,6 +1,8 @@
 # SentinelX Development Log
 
 
+2026-07-19 — added MongoDB indexing strategy for IOC collection
+
 2026-07-18 — added MongoDB client with connection pooling (database/client.py)
 
 2026-07-15 — fixed IOC model enum serialization, schema now produces clean string output
