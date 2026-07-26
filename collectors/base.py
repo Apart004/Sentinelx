@@ -4,7 +4,7 @@ Abstract base class that all feed collectors inherit from.
 """
 
 from abc import ABC, abstractmethod
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import httpx
 from loguru import logger
@@ -30,7 +30,7 @@ class BaseCollector(ABC):
             timeout=settings.collector_timeout,
             headers={"User-Agent": f"SentinelX/{settings.app_version}"},
         )
-        self.collected_at: datetime = datetime.now(timezone.utc)
+        self.collected_at: datetime = datetime.now(UTC)
         self.stats = {
             "fetched": 0,
             "normalized": 0,
@@ -43,7 +43,6 @@ class BaseCollector(ABC):
         Fetch raw data from the threat feed.
         Returns a list of raw records (dicts) from the source.
         """
-        pass
 
     @abstractmethod
     def normalize(self, raw_records: list[dict]) -> list[IOC]:
@@ -51,7 +50,6 @@ class BaseCollector(ABC):
         Convert raw feed records into standardized IOC objects.
         Returns a list of IOC instances ready for storage.
         """
-        pass
 
     def run(self) -> list[IOC]:
         """
@@ -80,7 +78,7 @@ class BaseCollector(ABC):
             logger.error(f"[{self.name}] HTTP error: {e}")
             return []
 
-        except Exception as e:
+        except Exception as e:  # noqa: BLE001
             self.stats["errors"] += 1
             logger.error(f"[{self.name}] Unexpected error: {e}")
             return []
