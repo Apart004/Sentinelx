@@ -3,9 +3,8 @@ SentinelX Database Models
 Pydantic models defining the data schema for all platform entities.
 """
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from enum import Enum
-from typing import Optional
 
 from pydantic import BaseModel, Field
 
@@ -48,7 +47,7 @@ class IOC(BaseModel):
 
     # --- Source tracking ---
     source: str = Field(..., description="Feed that first reported this IOC")
-    source_url: Optional[str] = Field(None, description="Direct link to the source report")
+    source_url: str | None = Field(None, description="Direct link to the source report")
     all_sources: list[str] = Field(
         default_factory=list,
         description="All feeds that have reported this IOC",
@@ -56,14 +55,14 @@ class IOC(BaseModel):
 
     # --- Temporal ---
     first_seen: datetime = Field(
-        default_factory=lambda: datetime.now(timezone.utc),
+        default_factory=lambda: datetime.now(UTC),
         description="When SentinelX first observed this IOC",
     )
     last_seen: datetime = Field(
-        default_factory=lambda: datetime.now(timezone.utc),
+        default_factory=lambda: datetime.now(UTC),
         description="Most recent time this IOC was seen in any feed",
     )
-    feed_reported_at: Optional[datetime] = Field(
+    feed_reported_at: datetime | None = Field(
         None,
         description="Timestamp from the source feed (may differ from first_seen)",
     )
@@ -77,7 +76,7 @@ class IOC(BaseModel):
         default_factory=list,
         description="Freeform tags (e.g. 'ransomware', 'apt29', 'emotet')",
     )
-    malware_family: Optional[str] = Field(
+    malware_family: str | None = Field(
         None,
         description="Malware family name if known (e.g. 'Emotet', 'Cobalt Strike')",
     )
