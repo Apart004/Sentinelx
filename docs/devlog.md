@@ -1,10 +1,13 @@
 # SentinelX Development Log
 
+
+2026-07-20 — built abstract base collector class (collectors/base.py), added httpx dependency
+
+
 <<<<<<< HEAD
 
 2026-07-22 — built AbuseIPDB collector, first real threat feed integration
 
-2026-07-20 — built abstract base collector class (collectors/base.py), added httpx dependency
 
 2026-07-19 — added MongoDB indexing strategy for IOC collection
 
