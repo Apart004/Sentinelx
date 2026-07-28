@@ -2,7 +2,7 @@
 
 <<<<<<< HEAD
 
-
+2026-07-22 — built AbuseIPDB collector, first real threat feed integration
 
 2026-07-20 — built abstract base collector class (collectors/base.py), added httpx dependency
 
