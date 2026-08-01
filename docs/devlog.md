@@ -1,13 +1,14 @@
 # SentinelX Development Log
 
 
-
-
-
 2026-07-20 — built abstract base collector class (collectors/base.py), added httpx dependency
 
 
-<<<<<<< HEAD
+
+
+
+
+
 
 
 2026-07-23 — built URLHaus collector, no API key needed, pulls live malicious URLs
@@ -21,10 +22,6 @@
 
 2026-07-15 — fixed IOC model enum serialization, schema now produces clean string output
 
-=======
-2026-07-15 — fixed IOC model enum serialization, schema now produces clean string output
-
->>>>>>> origin/main~
 2026-07-14 — designed IOC data schema (database/models.py) with pydantic, started Phase 1 on branch phase-1-threat-intel
 
 2026-07-13 — wrote ADR-001 (Python stack decision record), completing Phase 0
