@@ -1,10 +1,16 @@
 # SentinelX Development Log
 
 
+
+
+
 2026-07-20 — built abstract base collector class (collectors/base.py), added httpx dependency
 
 
 <<<<<<< HEAD
+
+
+2026-07-23 — built URLHaus collector, no API key needed, pulls live malicious URLs
 
 2026-07-22 — built AbuseIPDB collector, first real threat feed integration
 
