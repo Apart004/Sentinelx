@@ -78,7 +78,7 @@ External Feeds (AbuseIPDB, URLHaus, MalwareBazaar, AlienVault, Feodo)
 - [ ] P1-T14: Feed health monitor
 - [ ] P1-T15: CLI search tool
 - [ ] P1-T16: Unit tests
-- [ ] P1-T17: README update
+- [ ] P1-T17: README updates
 
 ---
 
