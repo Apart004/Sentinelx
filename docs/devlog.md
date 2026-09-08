@@ -1,6 +1,12 @@
 # SentinelX Development Log
 
 
+
+
+
+
+2026-07-29 — built Feodo Tracker collector, C2 IP feed (Emotet, TrickBot, Dridex)
+
 2026-08-16 — built MalwareBazaar collector, first hash-based IOC feed
 
 2026-07-23 — built URLHaus collector, no API key needed, pulls live malicious URLs
