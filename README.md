@@ -3,7 +3,6 @@
 > Open-source Blue Team Detection & Threat Intelligence Platform
 
 ![CI](https://github.com/Apart004/Sentinelx/actions/workflows/ci.yml/badge.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![Status](https://img.shields.io/badge/status-active%20development-orange.svg)
 ![Phase](https://img.shields.io/badge/phase-1%20threat%20intelligence-blueviolet.svg)
